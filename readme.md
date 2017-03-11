@@ -1,10 +1,8 @@
-💁 *Zemke/starter-laravel-angular has been upgraded to AngularJS 1.5.8.*
 
-💁 *Zemke/starter-laravel-angular has been upgraded to Laravel 5.3. You can pull the changes and run* `rm composer.lock && composer install --prefer-dist --no-scripts` *to merge the upgrade.*
 
-# Laravel and AngularJS Starter Application
+# Laravel and AngularJS Starter Application Sarha
 
-This is a repo for a starter application for a Single Page Application featuring the modern Laravel PHP framework and Google’s acclaimed front-end framework AngularJS. Just download and install and you have a good foundation for building any application.
+This is a repo for a starter application for a Single Page Application featuring the modern Laravel PHP framework and Google’s acclaimed front-end framework AngularJS. Also contain a clone of Sarha website as a starter app
 
 ## Features!
 
@@ -25,7 +23,7 @@ This is a repo for a starter application for a Single Page Application featuring
 
 ## Installation
 ```
-git clone https://github.com/Zemke/starter-laravel-angular.git
+git clone https://github.com/HazemAhmed95/Sarha
 ```
 ```
 composer install --prefer-dist
@@ -36,7 +34,7 @@ npm install
 
 ### Database setup
 
-Edit `.env.example` according to your environment and save as `.env`..
+Edit `.env` according to your environment and save as `.env`..
 An application key can be generates with the command `php artisan key:generate`.
 
 Run these commands to create the tables within the database you have already created.
@@ -73,54 +71,3 @@ Now you can browse the site  [http://localhost:8080](http://localhost:8080). �
 - NPM
 - MySQL
 
-## Heroku deployment
-
-### Unignore some files
-
-You should remove `.env` and `composer.lock` from `.gitignore`.
-
-#### .env
-
-Set up your `.env` file like described in “Database setup” above.
-
-### Heroku buildpacks
-
-You will need to add custom buildpacks for Heroku. Create `.buildpacks` and paste:
-
-```
-https://github.com/heroku/heroku-buildpack-php
-https://github.com/heroku/heroku-buildpack-nodejs
-```
-
-### Procfile
-
-```
-web: vendor/bin/heroku-php-apache2 public/
-```
-
-### NPM config
-
-Your `package.json` should be changed to this:
-
-```json
-{
-    "private": true,
-    "devDependencies": {
-        "gulp": "^3.8.8"
-    },
-    "dependencies": {
-        "laravel-elixir": "^3.0.0",
-        "gulp": "^3.8.8"
-    },
-    "scripts": {
-        "postinstall": "gulp"
-    }
-}
-```
-
-The `scripts` `postinstall` part is the important here, this will generate the resources like JS and CSS files.
-
-Have fun! Any feedback is welcome. Use [Issues](https://github.com/Zemke/starter-laravel-angular/issues) or [Twitter](https://twitter.com/FlorianZemke). My Twitter handle is @FlorianZemke. I’m looking forward to talk to you.
-
-![Laravel](https://cloud.githubusercontent.com/assets/3391981/6683259/2e914726-cc84-11e4-856c-bb26bda733a0.png)
-![AngularJS](https://cloud.githubusercontent.com/assets/3391981/6683229/9e0ea694-cc83-11e4-9b2e-59524dafd069.jpg)
