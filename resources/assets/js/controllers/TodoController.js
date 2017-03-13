@@ -1,4 +1,4 @@
-angular.module('TodoController', []).controller('TodoController', ['$scope', '$location', '$routeParams', 'Todo',
+angular.module('MessageController', []).controller('MessageController', ['$scope', '$location', '$routeParams', 'Todo',
   function ($scope, $location, $routeParams, Todo) {
     $scope.create = function () {
       var todo = new Todo({

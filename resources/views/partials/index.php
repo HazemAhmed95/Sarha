@@ -1,34 +1,36 @@
-  <div class="container p-t-md">
+ <div class="container p-t-md">
 
-        <h3>ِAre You Ready for the truth</h3>
+        <h3>هل أنت مستعد لمواجهة الكذب ؟</h3>
 <div class="row">
     <div class="col-md-12">
-     Join this website !<br /><br />
+        احصل على اتنشن هورنج  من زملائك في العمل وأصدقائك.<br /><br />
     </div>
 </div>
 <div class="row">
     <div class="col-md-6">
-        <h4>Your Friends</h4>
+        <h4>في العمل</h4>
         <ul>
-            <li>let them lie to you</li>
-            <li>Probably most of your messages will be are you gay bro?</li>
+            <li>خليهم يكدبو عليك</li>
+            <li>عالج نقاط ضعفك</li>
         </ul>
     </div>
 
     <div class="col-md-6">
-        <h4>Yourself</h4>
+        <h4>مع أصدقائك</h4>
         <ul>
-            <li>Write messages to yourself assuming that someone sent to you </li>
-            <li>You will die alone son.</li>
+            <li>عزز صداقاتك بمعرفة مزاياك وعيوبك</li>
+            <li>متخفش محدش هيكتبلك انه معجب بيك </li>
         </ul>
     </div>
 </div>
+
+>
 
 <br />
 <div class="row">
     <div class="col-md-12">
         &nbsp;
-<a style="font-weight:bold" href="/auth/signup">Sign Up</a> | <a style="font-weight: bold" href="/auth/login">Login</a>    </div>
+<a style="font-weight:bold" href="/auth/signup">تسجيل</a> | <a style="font-weight: bold" href="/auth/login">دخول</a>    </div>
 </div>
 
     </div>

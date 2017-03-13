@@ -19,23 +19,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img src="https://www.sarahah.com/img/Logo.png"></a> 
+            <a class="navbar-brand" href="/"> <span> <img style="padding-bottom:7px;" src="https://www.sarahah.com/img/Logo.png">&nbsp;كدب</a> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right">
                 <li >
                 	<a href="/todos/message">
-                		Message
+                		رسأئلى
                 	</a>
                 </li>
                 <li ng-if="authenticatedUser == null" ng-class="{active:isActive('/auth/signup')}">
                     <a href="/auth/signup">
-                        Sign Up
+                        تسحيل
                     </a>
                 </li>
                 <li ng-if="authenticatedUser == null" ng-class="{active:isActive('/auth/login')}">
                     <a href="/auth/login">
-                        Log in
+                        دخول
                     </a>
                 </li>
                 <li ng-if="authenticatedUser != null" ng-class="{active:isActive('/users/view/' + authenticatedUser.id)}">
@@ -45,7 +45,7 @@
                 </li>
                 <li ng-if="authenticatedUser != null" ng-click="logout()">
                     <a ng-href="#">
-                        Log out
+                        خروج
                     </a>
                 </li>
             </ul>

@@ -5,7 +5,7 @@ angular.module('todoApp', [
   'appRoutes',
   'enterStroke',
   'MainController',
-  'TodoController',
+  'MessageController',
   'UserController',
   'UserService',
   'TodoService',
