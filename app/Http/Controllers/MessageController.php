@@ -5,12 +5,20 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Message;
+use Tymon\JWTAuth\Facades\JWTAuth;
+use Tymon\JWTAuth\Exceptions\JWTException;
 
 class MessageController extends Controller
 {
     public function index()
-    {
-        return Message::all();
+    { 
+		 try{       
+			 $user = JWTAuth::parseToken()->authenticate(); 
+		 }
+		 catch (JWTException $e) {
+			  return response()->json(['msg' => 'error in the current user please relogin'], 500);
+		 }
+        return Message::where('user_id', '=', $user->id)->get();
     }
 
     public function store(Request $request)
@@ -23,9 +31,11 @@ class MessageController extends Controller
         return $message;
     }
 
-    public function show($id)
+    public function show()
     {
-        return Message::find($id);
+		 $user = JWTAuth::parseToken()->authenticate(); 
+		
+        return Message::where('user_id', '=', $user->user_id)->get();
     }
 
     public function update($id, Request $request)
